@@ -1,0 +1,107 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Engineering Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!--navbar-->
+    <!--
+    <section id="navbar" class="navbar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#" id="home">Home</a></li>
+                <li><a href="#" id="aboutus">About Us</a></li>
+                <li><a href="#" id="services">Services</a></li>
+                <li><a href="#" id="contactus">Contact Us</a></li>
+                <li><a href="#" id="fdback">Feedbacks</a></li>
+            </ul>
+        </nav>
+    </section>
+    -->
+
+    <!--sidenav-->
+    <section id="banner">
+        <img src="Images/logo1.png" class="logo">
+        <div class="bannertext">
+            <h1>JRG Engineering Services</h1>
+            <p>We Build Our Future</p>
+            <div class="bannerbtn">
+                <a href=""><span></span>LEARN MORE ></a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">FEEDBACKS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="Images/menu.png" id="menu">
+    </div>
+
+    <!--ABOUT US-->
+    <section id="about">
+        <div class="titletext">
+            <p>ABOUT US</p>
+            <h1>JRG Engineering Services was built in 2022 and offers the following</h1>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h1>Engineering Works</h1>
+                <div class="featuredesc">
+                    <div class="featureicon">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+                    <div class="featuretext">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featureimg">
+                <img src="Images/structural-plans.jpg">
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+
+        sidenav.style.right = "-250px"
+
+        menubtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+                menu.src = "Images/closemenu.png"
+            } else {
+                sidenav.style.right = "-250px";
+                menu.src = "Images/menu.png"
+            }
+        }
+    </script>
+    <i class="far fa-clock"></i>
+</body>
+
+</html>
