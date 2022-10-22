@@ -1,35 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Forms</title>
+
+    <title>feedbacks</title>
+
     <link rel="stylesheet" href="feedback.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <!--Icon link footer-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font link footer-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&family=Rajdhani:wght@400;700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
-    <div class="container">
-        <form>
-            <h1>Give your Feedback</h1>
-            <div class="id">
-                <input type="text" placeholder="Full Name" required>
-                <i class="fa fa-user"></i>
+    <section id="banner">
+        <!--index.html-->
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="feedback">FEEDBACKS</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="Images/menu.png" id="menu">
+        </div>
+
+        <!--Feedback-->
+        <section id="feedbacks" class="feedbacks">
+            <h1>Customers' Feedbacks</h1>
+            <div class="row">
+                <div class="feedback">
+                    <img src="Images/Customer1.jpg">
+                    <div>
+                        <p>Superb services! As expected from a company with good remarks!</p>
+                        <h3>Maria Clara</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <br>
+                <div class="feedback">
+                    <img src="Images/customer2.jpg">
+                    <div>
+                        <p>They did their part and took the project to a whole new level! I still can't believe it! 5/5
+                            for
+                            me</p>
+                        <h3>Robert Dimatibag</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <br>
+                <div class="feedback">
+                    <img src="Images/Customer3.jpg">
+                    <div>
+                        <p>They handled it better than I expected. Would give them 4/5 for now.</p>
+                        <h3>Jimboy Marquez</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
             </div>
-            <div class="id">
-                <input type="email" placeholder="johndoe@gmail.com" required>
-                <i class="fa fa-envelope"></i>               
+        </section>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section"></div>
+                <div class="footer-section"></div>
+                <div class="footer-section"></div>
             </div>
-            <textarea cols="15" rows="5" placeholder="Write your message here..."></textarea>
-            <button>Send</button>
+            <div class="footer-bottom">
+                We appreciate your feedbacks!
             </div>
-        </form>
-    </div>
-    
+        </div>
+        <!--JS-->
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            sidenav.style.right = "-250px"
+
+            menubtn.onclick = function () {
+                if (sidenav.style.right == "-250px") {
+                    sidenav.style.right = "0";
+                    menu.src = "Images/closemenu.png"
+                } else {
+                    sidenav.style.right = "-250px";
+                    menu.src = "Images/menu.png"
+                }
+            }
+        </script>
 </body>
+
 </html>
