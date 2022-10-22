@@ -75,8 +75,9 @@ nav ul li a{
 }
 .feedbacks h1{
     padding: 25px 10px;
-    font-size: 35px;
-    color: rgb(214, 161, 62);
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
 }
 .feedback{
     flex-basis: 47%;
